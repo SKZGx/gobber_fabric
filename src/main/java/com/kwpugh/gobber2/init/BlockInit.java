@@ -62,24 +62,24 @@ public class BlockInit
 	public static void registerBlockItems()
 	{
 		{
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block"), new BlockItem(GOBBER2_LUCKY_BLOCK, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block_deepslate"), new BlockItem(GOBBER2_LUCKY_BLOCK_DEEPSLATE, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block_nether"), new BlockItem(GOBBER2_LUCKY_BLOCK_NETHER, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block_end"), new BlockItem(GOBBER2_LUCKY_BLOCK_END, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block"), new BlockItem(GOBBER2_LUCKY_BLOCK, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block_deepslate"), new BlockItem(GOBBER2_LUCKY_BLOCK_DEEPSLATE, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block_nether"), new BlockItem(GOBBER2_LUCKY_BLOCK_NETHER, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_lucky_block_end"), new BlockItem(GOBBER2_LUCKY_BLOCK_END, new Item.Settings()));
 
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore"), new BlockItem(GOBBER2_ORE, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore_deepslate"), new BlockItem(GOBBER2_ORE_DEEPSLATE, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore_nether"), new BlockItem(GOBBER2_ORE_NETHER, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore_end"), new BlockItem(GOBBER2_ORE_END, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore"), new BlockItem(GOBBER2_ORE, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore_deepslate"), new BlockItem(GOBBER2_ORE_DEEPSLATE, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore_nether"), new BlockItem(GOBBER2_ORE_NETHER, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ore_end"), new BlockItem(GOBBER2_ORE_END, new Item.Settings()));
 
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_block"), new BlockItem(GOBBER2_BLOCK, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_block_nether"), new BlockItem(GOBBER2_BLOCK_NETHER, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_block_end"), new BlockItem(GOBBER2_BLOCK_END, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_block"), new BlockItem(GOBBER2_BLOCK, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_block_nether"), new BlockItem(GOBBER2_BLOCK_NETHER, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_block_end"), new BlockItem(GOBBER2_BLOCK_END, new Item.Settings()));
 			
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glass"), new BlockItem(GOBBER2_GLASS, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glass_nether"), new BlockItem(GOBBER2_GLASS_NETHER, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glass_end"), new BlockItem(GOBBER2_GLASS_END, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
-			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "clear_glass"), new BlockItem(CLEAR_GLASS, new Item.Settings().group(Gobber2.GOBBER2_GROUP)));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glass"), new BlockItem(GOBBER2_GLASS, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glass_nether"), new BlockItem(GOBBER2_GLASS_NETHER, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glass_end"), new BlockItem(GOBBER2_GLASS_END, new Item.Settings()));
+			Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "clear_glass"), new BlockItem(CLEAR_GLASS, new Item.Settings()));
 		}
 	}
 	

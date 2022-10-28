@@ -31,7 +31,7 @@
     "WitherSkeletonEntityMixin"
   ],
   "client": [
-    "ClientPlayerEntityMixinFallFlying",
+
     "EntityRenderDispatcherMixinStealth",
     "LivingEntityRendererMixinStealth"
   ],

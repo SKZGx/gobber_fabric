@@ -6,7 +6,7 @@ import com.kwpugh.gobber2.init.ItemInit;
 import com.kwpugh.gobber2.util.GobberForceManager;
 import com.kwpugh.gobber2.util.PlayerEquipUtil;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
@@ -33,7 +33,7 @@ public class PlayerBlockBreakEvent
 
         // give GobberForce if mining ore
         if(PlayerEquipUtil.isWearingFullArmor(player) &&
-                (state.getBlock() instanceof OreBlock) &&
+                (state.getBlock() instanceof ExperienceDroppingBlock) &&
                 Gobber2.CONFIG.GENERAL.enableGobberForce &&
                 Gobber2.CONFIG.GENERAL.enableGFMiningEarning)
         {
@@ -45,7 +45,7 @@ public class PlayerBlockBreakEvent
 
     public static void giveExperienceEffect(PlayerEntity player, BlockState state)
     {
-        if(state.getBlock() instanceof OreBlock || Gobber2.CONFIG.GENERAL.medallionExpFromAnyBlock)
+        if(state.getBlock() instanceof ExperienceDroppingBlock || Gobber2.CONFIG.GENERAL.medallionExpFromAnyBlock)
         {
             StatusEffectInstance effect = new StatusEffectInstance(EffectsInit.EXPERIENCE, Gobber2.CONFIG.GENERAL.medallionExpDuration, Gobber2.CONFIG.GENERAL.medallionExpAmplifer, true, true);
             player.addStatusEffect(effect);

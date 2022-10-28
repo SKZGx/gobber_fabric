@@ -7,7 +7,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
@@ -20,7 +20,7 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public class BaseOreBlock extends OreBlock
+public class BaseOreBlock extends ExperienceDroppingBlock
 {
     public static final Gobber2Config.Ores CONFIG = Gobber2.CONFIG.ORES;
     private static int maxLevel;

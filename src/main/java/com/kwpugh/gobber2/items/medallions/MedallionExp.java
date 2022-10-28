@@ -24,7 +24,7 @@ public class MedallionExp extends BaseMedallion
 
 	public MedallionExp(Settings settings)
 	{
-		super(new Item.Settings().maxDamage(MAX_STORAGE).group(Gobber2.GOBBER2_GROUP));
+		super(new Item.Settings().maxDamage(MAX_STORAGE));
 	}
 
 	// Test code
