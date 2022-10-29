@@ -13,11 +13,9 @@ import net.minecraft.world.gen.placementmodifier.*;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class GobberOrePlacedFeature
+public class GobberOreBiomeModifications
 {
-    public static final Gobber2Config.Ores CONFIG = Gobber2.CONFIG.ORES;
-
-    public static void register()
+    public static void addOres()
     {
         // Inject into Biomes
         BiomeModifications.addFeature(overworldSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier(Gobber2.MOD_ID, "ore_lucky_block_overworld")));

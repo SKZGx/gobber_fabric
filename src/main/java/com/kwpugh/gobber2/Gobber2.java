@@ -4,7 +4,7 @@ import com.kwpugh.gobber2.config.Gobber2Config;
 import com.kwpugh.gobber2.events.ModEvents;
 import com.kwpugh.gobber2.init.*;
 import com.kwpugh.gobber2.util.GobberGroup;
-import com.kwpugh.gobber2.world.GobberOrePlacedFeature;
+import com.kwpugh.gobber2.world.GobberOreBiomeModifications;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
@@ -26,7 +26,7 @@ public class Gobber2 implements ModInitializer
     	BlockInit.registerBlockEntities();
     	ItemInit.registerItems();
     	GobberGroup.addGroup();
-		GobberOrePlacedFeature.register();
+		GobberOreBiomeModifications.addOres();
     	FuelInit.registerFuels();;
     	EnchantmentInit.registerEnchantments();
     	EffectsInit.registerEffects();
