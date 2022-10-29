@@ -1,6 +1,7 @@
 package com.kwpugh.gobber2.util;
 
 import com.kwpugh.gobber2.Gobber2;
+import com.kwpugh.gobber2.init.BlockInit;
 import com.kwpugh.gobber2.init.ItemInit;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -26,6 +27,25 @@ public class GobberGroup
         @Override
         protected void addItems(FeatureSet enabledFeatures, Entries entries)
         {
+            entries.add(BlockInit.GOBBER2_LUCKY_BLOCK);
+            entries.add(BlockInit.GOBBER2_LUCKY_BLOCK_DEEPSLATE);
+            entries.add(BlockInit.GOBBER2_LUCKY_BLOCK_NETHER);
+            entries.add(BlockInit.GOBBER2_LUCKY_BLOCK_END);
+
+            entries.add(BlockInit.GOBBER2_ORE);
+            entries.add(BlockInit.GOBBER2_ORE_DEEPSLATE);
+            entries.add(BlockInit.GOBBER2_ORE_NETHER);
+            entries.add(BlockInit.GOBBER2_ORE_END);
+
+            entries.add(BlockInit.GOBBER2_BLOCK);
+            entries.add(BlockInit.GOBBER2_BLOCK_NETHER);
+            entries.add(BlockInit.GOBBER2_BLOCK_END);
+
+            entries.add(BlockInit.GOBBER2_GLASS);
+            entries.add(BlockInit.GOBBER2_GLASS_NETHER);
+            entries.add(BlockInit.GOBBER2_GLASS_END);
+            entries.add(BlockInit.CLEAR_GLASS);
+
             entries.add(ItemInit.GOBBER2_GLOBETTE);
             entries.add(ItemInit.GOBBER2_GLOBETTE_NETHER);
             entries.add(ItemInit.GOBBER2_GLOBETTE_END);
