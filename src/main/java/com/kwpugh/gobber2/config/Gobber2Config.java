@@ -15,43 +15,6 @@ public class Gobber2Config extends PartitioningSerializer.GlobalData
     public static class Ores implements ConfigData 
     {
 		@Comment("\n"
-				+"\n"
-				+ "***********************"
-				+"\nLucky Block"
-				+"\n***********************")
-		public int luckyVeinSize = 4;
-		public int luckyMaxLevel = 120;
-		public int luckyPerChunk = 15;
-		public int luckyExpOrbs = 2;
-
-		@Comment("\n"
-				+"\n"
-				+ "***********************"
-				+"\nLucky Block - Deepslate"
-				+"\n***********************")
-		public int luckyDeepslateVeinSize = 4;
-		public int luckyDeepslateMaxLevel = 0;
-		public int luckyDeepslatePerChunk = 15;
-
-		@Comment("\n"
-				+"\n"
-				+ "***********************"
-				+"\nLucky Block - Nether"
-				+"\n***********************")
-		public int luckyNetherVeinSize = 4;
-		public int luckyNetherMaxLevel = 128;
-		public int luckyNetherPerChunk = 15;
-
-		@Comment("\n"
-				+"\n"
-				+ "***********************"
-				+"\nLucky Block - End"
-				+"\n***********************")
-		public int luckyEndVeinSize = 9;
-		public int luckyEndMaxLevel = 180;
-		public int luckyEndPerChunk = 25;
-
-		@Comment("\n"
 				+ "\n"
 				+ "***********************"
 				+ "\nLucky Block - Drops"
@@ -68,6 +31,7 @@ public class Gobber2Config extends PartitioningSerializer.GlobalData
 		public double uncommonThreshold = .009;
 		public double rareThreshold = .006;
 		public String defaultDrop = "gobbers:gobber2_foo";
+		public int luckyExpOrbs = 2;
 
 		@Comment("\n"
 				+"\n"
@@ -77,42 +41,6 @@ public class Gobber2Config extends PartitioningSerializer.GlobalData
 		public int oreBlastResistance = 1300;
 		public int glassBlastResistance = 1300;
 		public int blockBlastResistance = 1300;
-
-	    @Comment("\n"
-	    		+"\n"
-	    		+ "***********************"    		
-	    		+"\nGobber Ore"
-	    		+"\n***********************")
-	    public int gobberVeinSize = 4;
-    	public int gobberMaxLevel = 5;
-    	public int gobberPerChunk = 20;
-
-		@Comment("\n"
-				+"\n"
-				+ "***********************"
-				+"\nDeepslate Gobber Ore"
-				+"\n***********************")
-		public int gobberDeepslateVeinSize = 4;
-		public int gobberDeepslateMaxLevel = 0;
-		public int gobberDeepslatePerChunk = 20;
-
-        @Comment("\n"
-        		+"\n"
-        		+ "***********************"
-	    		+"\nNether Gobber Ore"
-	    		+"\n***********************")
-	    public int netherGobberVeinSize = 4;
-    	public int netherGobberMaxLevel = 40;
-    	public int netherGobberPerChunk = 20;
-    	
-        @Comment("\n"
-        		+"\n"
-        		+ "***********************"
- 	    		+"\nEnd Gobber Ore"
- 	    		+"\n***********************")
- 	    public int endGobberVeinSize = 9;
-     	public int endGobberMaxLevel = 180;
-     	public int endGobberPerChunk = 25;
     }
     
     @Config(name = "general")
