@@ -25,7 +25,7 @@ public class GobberGroup
         }
 
         @Override
-        protected void addItems(FeatureSet enabledFeatures, Entries entries)
+        protected void addItems(FeatureSet enabledFeatures, Entries entries, boolean hasPermission)
         {
             entries.add(BlockInit.GOBBER2_LUCKY_BLOCK);
             entries.add(BlockInit.GOBBER2_LUCKY_BLOCK_DEEPSLATE);

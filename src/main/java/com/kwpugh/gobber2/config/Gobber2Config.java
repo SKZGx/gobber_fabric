@@ -86,6 +86,7 @@ public class Gobber2Config extends PartitioningSerializer.GlobalData
 		public int ringStrengthResistenceLevel = 1;
 		public boolean ringSunshineAuto = false;
 		public int ringSwiftnessLevel = 1;
+		public int ringSwiftnessJump = 3;
  		public double ringTravelerLaunch = 4.0;
  		public double ringTravelerCruising = 0.2;
  		public boolean allowWorkInEnderchest = false;
@@ -100,6 +101,7 @@ public class Gobber2Config extends PartitioningSerializer.GlobalData
 		public int medallionLesserHealingAmount = 1;
 		public int medallionHealingAmount = 2;
 		public int medallionGreaterHealingAmount = 3;
+		public boolean medallionHealingIncludesSaturation = false;
 		public boolean medallionSeaAlwaysOn = false;
 		public int medallionShieldingHorizRange = 3;
 		public int medallionShieldingVertRange = 2;
@@ -317,7 +319,7 @@ public class Gobber2Config extends PartitioningSerializer.GlobalData
 		public int effectDurationGobberArrow = 300;
 		public boolean enableGobberArrowCobweb = false;
 		public boolean enableGobberArrowExplode = false;
-		public int explosionFactorGobberArrow = 2;
+		public float explosionFactorGobberArrow = 2.0F;
 		public int extraDamageGobberArrow = 5;
 		public byte piercingLeveGobberArrow = 0;
 		public int punchLevelGobberArrow = 0;

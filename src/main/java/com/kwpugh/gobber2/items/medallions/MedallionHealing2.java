@@ -14,12 +14,12 @@ import java.util.List;
 
 public class MedallionHealing2 extends BaseMedallion
 {
+    static int amount = Gobber2.CONFIG.GENERAL.medallionHealingAmount;
+
     public MedallionHealing2(Settings settings)
     {
         super(settings);
     }
-
-    static int amount = Gobber2.CONFIG.GENERAL.medallionHealingAmount;
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected)
@@ -27,7 +27,11 @@ public class MedallionHealing2 extends BaseMedallion
         PlayerEntity player = (PlayerEntity) entity;
 
         PlayerSpecialAbilities.giveHealing(player, amount);
-        PlayerSpecialAbilities.giveSaturationEffect(player);
+
+        if(Gobber2.CONFIG.GENERAL.medallionHealingIncludesSaturation)
+        {
+            PlayerSpecialAbilities.giveSaturationEffect(player);
+        }
     }
 
     @Override

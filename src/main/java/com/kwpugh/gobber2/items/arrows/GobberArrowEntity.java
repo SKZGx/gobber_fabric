@@ -107,7 +107,8 @@ public class GobberArrowEntity extends PersistentProjectileEntity
     private void explodeOnHit(double x, double y, double z)
     {
         boolean griefingAllowed = this.world.getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING);
-        this.world.createExplosion(this, x, y, z, Gobber2.CONFIG.GENERAL.explosionFactorGobberArrow, griefingAllowed ? Explosion.DestructionType.BREAK : Explosion.DestructionType.NONE);
+        //this.world.createExplosion(this, x, y, z, c, griefingAllowed ? Explosion.DestructionType.BREAK : Explosion.DestructionType.NONE);
+        this.world.createExplosion(this, x, y, z, Gobber2.CONFIG.GENERAL.explosionFactorGobberArrow, griefingAllowed ? World.class_7867.TNT : World.class_7867.NONE);
         this.discard();
     }
 
