@@ -17,6 +17,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.util.registry.Registries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -38,7 +39,7 @@ public class LuckyBlock extends BaseOreBlock
 
 	// Get the default item string from config and cast to ItemStack
 	Identifier id = Identifier.tryParse(Gobber2.CONFIG.ORES.defaultDrop);
-	ItemStack stack = Registry.ITEM.get(id).getDefaultStack();
+	ItemStack stack = Registries.ITEM.get(id).getDefaultStack();
 
 	@Override
 	public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player)
@@ -74,25 +75,25 @@ public class LuckyBlock extends BaseOreBlock
 				}
 				else if(r >= Gobber2.CONFIG.ORES.commonThreshold) // Common
 				{
-					stack = Registry.ITEM.getEntryList(TagInit.COMMON_LOOT).flatMap((items) ->
+					stack = Registries.ITEM.getEntryList(TagInit.COMMON_LOOT).flatMap((items) ->
 							items.getRandom(random)).map((itemEntry) ->
 							(itemEntry.value()).getDefaultStack()).orElse(stack);
 				}
 				else if(r >= Gobber2.CONFIG.ORES.uncommonThreshold)  //Uncommon
 				{
-					stack = Registry.ITEM.getEntryList(TagInit.UNCOOMMON_LOOT).flatMap((items) ->
+					stack = Registries.ITEM.getEntryList(TagInit.UNCOOMMON_LOOT).flatMap((items) ->
 							items.getRandom(random)).map((itemEntry) ->
 							(itemEntry.value()).getDefaultStack()).orElse(stack);
 				}
 				else if(r >= Gobber2.CONFIG.ORES.rareThreshold)  //Rare
 				{
-					stack = Registry.ITEM.getEntryList(TagInit.RARE_LOOT).flatMap((items) ->
+					stack = Registries.ITEM.getEntryList(TagInit.RARE_LOOT).flatMap((items) ->
 							items.getRandom(random)).map((itemEntry) ->
 							(itemEntry.value()).getDefaultStack()).orElse(stack);
 				}
 				else  //Very Rare
 				{
-					stack = Registry.ITEM.getEntryList(TagInit.VERY_RARE_LOOT).flatMap((items) ->
+					stack = Registries.ITEM.getEntryList(TagInit.VERY_RARE_LOOT).flatMap((items) ->
 							items.getRandom(random)).map((itemEntry) ->
 							(itemEntry.value()).getDefaultStack()).orElse(stack);
 				}

@@ -19,6 +19,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.util.registry.RegistryKeys;
 import net.minecraft.world.TeleportTarget;
 import net.minecraft.world.World;
 
@@ -156,7 +157,8 @@ public class RingTeleport extends BaseRing
 		ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
 
 		// Build world to test from stored data
-		RegistryKey<World> storedKey = RegistryKey.of(Registry.WORLD_KEY, new Identifier(dim));
+//		RegistryKey<World> storedKey = RegistryKey.of(Registry.WORLD_KEY, new Identifier(dim));
+		RegistryKey<World> storedKey = RegistryKey.of(RegistryKeys.DIMENSION, new Identifier(dim));
 		ServerWorld storedWorld = ((ServerWorld)world).getServer().getWorld(storedKey);
 
 		if(storedWorld == null || pos == null)

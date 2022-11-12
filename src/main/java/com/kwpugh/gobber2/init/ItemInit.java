@@ -27,6 +27,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.StewItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registries;
 import net.minecraft.util.registry.Registry;
 
 public class ItemInit
@@ -211,158 +212,158 @@ public class ItemInit
 
 	public static void registerItems()
 	{
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_globette"), GOBBER2_GLOBETTE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_globette_nether"), GOBBER2_GLOBETTE_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_globette_end"), GOBBER2_GLOBETTE_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_globette"), GOBBER2_GLOBETTE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_globette_nether"), GOBBER2_GLOBETTE_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_globette_end"), GOBBER2_GLOBETTE_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glob"), GOBBER2_GLOB);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glob_nether"), GOBBER2_GLOB_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glob_end"), GOBBER2_GLOB_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glob"), GOBBER2_GLOB);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glob_nether"), GOBBER2_GLOB_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_glob_end"), GOBBER2_GLOB_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_foo"), GOBBER2_FOO);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_foo_nether"), GOBBER2_FOO_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_foo_end"), GOBBER2_FOO_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_foo"), GOBBER2_FOO);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_foo_nether"), GOBBER2_FOO_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_foo_end"), GOBBER2_FOO_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_goo"), GOBBER2_GOO);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_apple"), GOBBER2_GOOEY_APPLE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_bread"), GOBBER2_GOOEY_BREAD);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beef"), GOBBER2_GOOEY_BEEF);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beefstew"), GOBBER2_GOOEY_BEEFSTEW);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_goo"), GOBBER2_GOO);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_apple"), GOBBER2_GOOEY_APPLE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_bread"), GOBBER2_GOOEY_BREAD);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beef"), GOBBER2_GOOEY_BEEF);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beefstew"), GOBBER2_GOOEY_BEEFSTEW);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_goo_nether"), GOBBER2_GOO_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_apple_nether"), GOBBER2_GOOEY_APPLE_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_bread_nether"), GOBBER2_GOOEY_BREAD_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beef_nether"), GOBBER2_GOOEY_BEEF_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beefstew_nether"), GOBBER2_GOOEY_BEEFSTEW_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_goo_nether"), GOBBER2_GOO_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_apple_nether"), GOBBER2_GOOEY_APPLE_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_bread_nether"), GOBBER2_GOOEY_BREAD_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beef_nether"), GOBBER2_GOOEY_BEEF_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_gooey_beefstew_nether"), GOBBER2_GOOEY_BEEFSTEW_NETHER);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ingot"), GOBBER2_INGOT);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ingot_nether"), GOBBER2_INGOT_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ingot_end"), GOBBER2_INGOT_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ingot"), GOBBER2_INGOT);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ingot_nether"), GOBBER2_INGOT_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ingot_end"), GOBBER2_INGOT_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_rod"), GOBBER2_ROD);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_rod_nether"), GOBBER2_ROD_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_rod_end"), GOBBER2_ROD_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_rod"), GOBBER2_ROD);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_rod_nether"), GOBBER2_ROD_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_rod_end"), GOBBER2_ROD_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring"), GOBBER2_RING);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_nether"), GOBBER2_RING_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_end"), GOBBER2_RING_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring"), GOBBER2_RING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_nether"), GOBBER2_RING_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_end"), GOBBER2_RING_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion"), GOBBER2_MEDALLION);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_nether"), GOBBER2_MEDALLION_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_end"), GOBBER2_MEDALLION_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion"), GOBBER2_MEDALLION);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_nether"), GOBBER2_MEDALLION_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_end"), GOBBER2_MEDALLION_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword"), GOBBER2_SWORD);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword_nether"), GOBBER2_SWORD_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword_end"), GOBBER2_SWORD_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword_sniper"), GOBBER2_SWORD_SNIPER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword"), GOBBER2_SWORD);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword_nether"), GOBBER2_SWORD_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword_end"), GOBBER2_SWORD_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_sword_sniper"), GOBBER2_SWORD_SNIPER);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_bow"), GOBBER2_BOW);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_bow_nether"), GOBBER2_BOW_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_bow_end"), GOBBER2_BOW_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_bow"), GOBBER2_BOW);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_bow_nether"), GOBBER2_BOW_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_bow_end"), GOBBER2_BOW_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_arrow"), GOBBER2_ARROW);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_arrow_nether"), GOBBER2_ARROW_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_arrow_end"), GOBBER2_ARROW_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_arrow"), GOBBER2_ARROW);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_arrow_nether"), GOBBER2_ARROW_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_arrow_end"), GOBBER2_ARROW_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_pickaxe"), GOBBER2_PICKAXE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_pickaxe_nether"), GOBBER2_PICKAXE_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_pickaxe_end"), GOBBER2_PICKAXE_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_pickaxe"), GOBBER2_PICKAXE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_pickaxe_nether"), GOBBER2_PICKAXE_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_pickaxe_end"), GOBBER2_PICKAXE_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_axe"), GOBBER2_AXE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_axe_nether"), GOBBER2_AXE_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_axe_end"), GOBBER2_AXE_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_axe"), GOBBER2_AXE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_axe_nether"), GOBBER2_AXE_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_axe_end"), GOBBER2_AXE_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_shovel"), GOBBER2_SHOVEL);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_shovel_nether"), GOBBER2_SHOVEL_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_shovel_end"), GOBBER2_SHOVEL_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_shovel"), GOBBER2_SHOVEL);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_shovel_nether"), GOBBER2_SHOVEL_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_shovel_end"), GOBBER2_SHOVEL_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hoe"), GOBBER2_HOE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hoe_nether"), GOBBER2_HOE_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hoe_end"), GOBBER2_HOE_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hoe"), GOBBER2_HOE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hoe_nether"), GOBBER2_HOE_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hoe_end"), GOBBER2_HOE_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel"), GOBBER2_PAXEL);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel_nether"), GOBBER2_PAXEL_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel_end"), GOBBER2_PAXEL_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel_stars"), GOBBER2_PAXEL_STARS);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hammer"), GOBBER2_HAMMER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hammer_nether"), GOBBER2_HAMMER_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hammer_end"), GOBBER2_HAMMER_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_excavator"), GOBBER2_EXCAVATOR);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_excavator_nether"), GOBBER2_EXCAVATOR_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_excavator_end"), GOBBER2_EXCAVATOR_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_tree_axe"), GOBBER2_TREE_AXE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_tree_axe_nether"), GOBBER2_TREE_AXE_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_tree_axe_end"), GOBBER2_TREE_AXE_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel"), GOBBER2_PAXEL);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel_nether"), GOBBER2_PAXEL_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel_end"), GOBBER2_PAXEL_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_paxel_stars"), GOBBER2_PAXEL_STARS);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hammer"), GOBBER2_HAMMER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hammer_nether"), GOBBER2_HAMMER_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_hammer_end"), GOBBER2_HAMMER_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_excavator"), GOBBER2_EXCAVATOR);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_excavator_nether"), GOBBER2_EXCAVATOR_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_excavator_end"), GOBBER2_EXCAVATOR_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_tree_axe"), GOBBER2_TREE_AXE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_tree_axe_nether"), GOBBER2_TREE_AXE_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_tree_axe_end"), GOBBER2_TREE_AXE_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet"), GOBBER2_HELMET);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate"), GOBBER2_CHESTPLATE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings"), GOBBER2_LEGGINGS);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots"), GOBBER2_BOOTS);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet"), GOBBER2_HELMET);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate"), GOBBER2_CHESTPLATE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings"), GOBBER2_LEGGINGS);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots"), GOBBER2_BOOTS);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet_nether"), GOBBER2_HELMET_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate_nether"), GOBBER2_CHESTPLATE_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings_nether"), GOBBER2_LEGGINGS_NETHER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots_nether"), GOBBER2_BOOTS_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet_nether"), GOBBER2_HELMET_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate_nether"), GOBBER2_CHESTPLATE_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings_nether"), GOBBER2_LEGGINGS_NETHER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots_nether"), GOBBER2_BOOTS_NETHER);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_links_end"), GOBBER2_LINKS_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet_end"), GOBBER2_HELMET_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate_end"), GOBBER2_CHESTPLATE_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings_end"), GOBBER2_LEGGINGS_END);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots_end"), GOBBER2_BOOTS_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_links_end"), GOBBER2_LINKS_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet_end"), GOBBER2_HELMET_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate_end"), GOBBER2_CHESTPLATE_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings_end"), GOBBER2_LEGGINGS_END);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots_end"), GOBBER2_BOOTS_END);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "dragon_elytra"), DRAGON_ELYTRA);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "dragon_star"), DRAGON_STAR);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "dragon_elytra"), DRAGON_ELYTRA);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "dragon_star"), DRAGON_STAR);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet_dragon"), GOBBER2_HELMET_DRAGON);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate_dragon"), GOBBER2_CHESTPLATE_DRAGON);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings_dragon"), GOBBER2_LEGGINGS_DRAGON);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots_dragon"), GOBBER2_BOOTS_DRAGON);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_helmet_dragon"), GOBBER2_HELMET_DRAGON);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_chestplate_dragon"), GOBBER2_CHESTPLATE_DRAGON);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_leggings_dragon"), GOBBER2_LEGGINGS_DRAGON);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_boots_dragon"), GOBBER2_BOOTS_DRAGON);
 		
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_attraction"), GOBBER2_RING_ATTRACTION);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_return"), GOBBER2_RING_RETURN);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_swiftness"), GOBBER2_RING_SWIFTNESS);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_farmer"), GOBBER2_RING_FARMER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_miner"), GOBBER2_RING_MINER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_ascent"), GOBBER2_RING_ASCENT);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_sunshine"), GOBBER2_RING_SUNSHINE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_above"), GOBBER2_RING_ABOVE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_luck"), GOBBER2_RING_LUCK);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_curing"), GOBBER2_RING_CURING);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_vision"), GOBBER2_RING_VISION);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_strength"), GOBBER2_RING_STRENGTH);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_haste"), GOBBER2_RING_HASTE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_phoenix"), GOBBER2_RING_PHOENIX);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_repair"), GOBBER2_RING_REPAIR);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_airwalking"), GOBBER2_RING_AIRWALKING);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_enderchest"), GOBBER2_RING_ENDERCHEST);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_explorer"), GOBBER2_RING_EXPLORER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_blink"), GOBBER2_RING_BLINK);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_void"), GOBBER2_RING_VOID);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_teleport"), GOBBER2_RING_TELEPORT);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_dismissal"), GOBBER2_RING_DISMISSAL);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_stealth"), GOBBER2_RING_STEALTH);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_traveler"), GOBBER2_RING_TRAVELER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_attraction"), GOBBER2_RING_ATTRACTION);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_return"), GOBBER2_RING_RETURN);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_swiftness"), GOBBER2_RING_SWIFTNESS);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_farmer"), GOBBER2_RING_FARMER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_miner"), GOBBER2_RING_MINER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_ascent"), GOBBER2_RING_ASCENT);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_sunshine"), GOBBER2_RING_SUNSHINE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_above"), GOBBER2_RING_ABOVE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_luck"), GOBBER2_RING_LUCK);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_curing"), GOBBER2_RING_CURING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_vision"), GOBBER2_RING_VISION);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_strength"), GOBBER2_RING_STRENGTH);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_haste"), GOBBER2_RING_HASTE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_phoenix"), GOBBER2_RING_PHOENIX);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_repair"), GOBBER2_RING_REPAIR);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_airwalking"), GOBBER2_RING_AIRWALKING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_enderchest"), GOBBER2_RING_ENDERCHEST);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_explorer"), GOBBER2_RING_EXPLORER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_blink"), GOBBER2_RING_BLINK);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_void"), GOBBER2_RING_VOID);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_teleport"), GOBBER2_RING_TELEPORT);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_dismissal"), GOBBER2_RING_DISMISSAL);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_stealth"), GOBBER2_RING_STEALTH);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_ring_traveler"), GOBBER2_RING_TRAVELER);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_breathing"), GOBBER2_MEDALLION_BREATHING);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_healing"), GOBBER2_MEDALLION_HEALING);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_hero"), GOBBER2_MEDALLION_HERO);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_exp"), GOBBER2_MEDALLION_EXP);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_healing2"), GOBBER2_MEDALLION_HEALING2);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_shielding"), GOBBER2_MEDALLION_SHIELDING);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_sea"), GOBBER2_MEDALLION_SEA);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_healing3"), GOBBER2_MEDALLION_HEALING3);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_suffering"), GOBBER2_MEDALLION_SUFFERING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_breathing"), GOBBER2_MEDALLION_BREATHING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_healing"), GOBBER2_MEDALLION_HEALING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_hero"), GOBBER2_MEDALLION_HERO);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_exp"), GOBBER2_MEDALLION_EXP);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_healing2"), GOBBER2_MEDALLION_HEALING2);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_shielding"), GOBBER2_MEDALLION_SHIELDING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_sea"), GOBBER2_MEDALLION_SEA);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_healing3"), GOBBER2_MEDALLION_HEALING3);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_medallion_suffering"), GOBBER2_MEDALLION_SUFFERING);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_clearing"), GOBBER2_STAFF_CLEARING);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_transformation"), GOBBER2_STAFF_TRANSFORMATION);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_ensnarement"), GOBBER2_STAFF_ENSNAREMENT);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_farmer"), GOBBER2_STAFF_FARMER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_nature"), GOBBER2_STAFF_NATURE);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_stars"), GOBBER2_STAFF_STARS);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_hostile_ensnarement"), GOBBER2_STAFF_HOSTILE_ENSNAREMENT);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_sniper"), GOBBER2_STAFF_SNIPER);
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_channeling"), GOBBER2_STAFF_CHANNELING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_clearing"), GOBBER2_STAFF_CLEARING);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_transformation"), GOBBER2_STAFF_TRANSFORMATION);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_ensnarement"), GOBBER2_STAFF_ENSNAREMENT);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_farmer"), GOBBER2_STAFF_FARMER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_nature"), GOBBER2_STAFF_NATURE);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_stars"), GOBBER2_STAFF_STARS);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_hostile_ensnarement"), GOBBER2_STAFF_HOSTILE_ENSNAREMENT);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_sniper"), GOBBER2_STAFF_SNIPER);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_staff_channeling"), GOBBER2_STAFF_CHANNELING);
 
-		Registry.register(Registry.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_special_item"), GOBBER2_SPECIAL_ITEM);
+		Registry.register(Registries.ITEM, new Identifier(Gobber2.MOD_ID, "gobber2_special_item"), GOBBER2_SPECIAL_ITEM);
 	}
 }
