@@ -1,17 +1,15 @@
 package com.kwpugh.gobber2.world;
 
 import com.kwpugh.gobber2.Gobber2;
-import com.kwpugh.gobber2.config.Gobber2Config;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectionContext;
-import net.minecraft.tag.BiomeTags;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registries;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
-import net.minecraft.util.registry.RegistryKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.placementmodifier.*;
+
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -21,12 +19,12 @@ public class GobberOreBiomeModifications
     {
 
         // Inject into Biomes
-        BiomeModifications.addFeature(overworldSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE_WORLDGEN, new Identifier(Gobber2.MOD_ID, "ore_lucky_block_overworld")));
-        BiomeModifications.addFeature(overworldSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE_WORLDGEN, new Identifier(Gobber2.MOD_ID, "ore_gobber_overworld")));
-        BiomeModifications.addFeature(netherSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE_WORLDGEN, new Identifier(Gobber2.MOD_ID, "ore_lucky_block_nether")));
-        BiomeModifications.addFeature(netherSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE_WORLDGEN, new Identifier(Gobber2.MOD_ID, "ore_gobber_nether")));
-        BiomeModifications.addFeature(endSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE_WORLDGEN, new Identifier(Gobber2.MOD_ID, "ore_lucky_block_end")));
-        BiomeModifications.addFeature(endSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE_WORLDGEN, new Identifier(Gobber2.MOD_ID, "ore_gobber_end")));
+        BiomeModifications.addFeature(overworldSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Gobber2.MOD_ID, "ore_lucky_block_overworld")));
+        BiomeModifications.addFeature(overworldSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Gobber2.MOD_ID, "ore_gobber_overworld")));
+        BiomeModifications.addFeature(netherSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Gobber2.MOD_ID, "ore_lucky_block_nether")));
+        BiomeModifications.addFeature(netherSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Gobber2.MOD_ID, "ore_gobber_nether")));
+        BiomeModifications.addFeature(endSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Gobber2.MOD_ID, "ore_lucky_block_end")));
+        BiomeModifications.addFeature(endSelector(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Gobber2.MOD_ID, "ore_gobber_end")));
     }
 
     public static Predicate<BiomeSelectionContext> overworldSelector()

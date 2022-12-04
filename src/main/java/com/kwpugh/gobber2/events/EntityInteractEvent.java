@@ -21,7 +21,7 @@ public class EntityInteractEvent
 
             if(stack.getItem() == ItemInit.GOBBER2_STAFF_ENSNAREMENT)
             {
-                EnsnarementUtil.captureMobs(stack, player, livingEntity, hand);
+                EnsnarementUtil.capturePassiveMobs(stack, player, livingEntity, hand);
                 player.swingHand(hand);
 
                 return ActionResult.SUCCESS;
@@ -29,7 +29,7 @@ public class EntityInteractEvent
 
             if(stack.getItem() == ItemInit.GOBBER2_STAFF_HOSTILE_ENSNAREMENT)
             {
-                EnsnarementUtil.captureHostileMobs(stack, player, livingEntity, hand);
+                EnsnarementUtil.captureAllMobs(stack, player, livingEntity, hand);
                 player.swingHand(hand);
 
                 return ActionResult.SUCCESS;

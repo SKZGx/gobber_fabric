@@ -66,7 +66,7 @@ public class RingAirWalking extends BaseRing implements HandRemoveHandler, HandT
 			Block glassBlock = BlockInit.CLEAR_GLASS;
 			BlockState glassDefaultState = glassBlock.getDefaultState();	      
       
-			if (world.isAir(pos) || !world.getFluidState(pos).isEmpty())
+			if(world.isAir(pos) || !world.getFluidState(pos).isEmpty())
 			{
 				world.setBlockState(pos, glassDefaultState);
 				stack.damage(1, serverPlayer, (p_220038_0_) -> {

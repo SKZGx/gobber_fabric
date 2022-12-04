@@ -2,7 +2,7 @@ package com.kwpugh.gobber2.util;
 
 import com.kwpugh.gobber2.init.TagInit;
 import net.minecraft.block.*;
-import net.minecraft.tag.BlockTags;
+import net.minecraft.registry.tag.BlockTags;
 
 public class MinerBlockTest
 {

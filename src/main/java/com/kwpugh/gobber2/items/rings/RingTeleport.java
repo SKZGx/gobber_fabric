@@ -8,6 +8,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtHelper;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -17,9 +19,6 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
-import net.minecraft.util.registry.RegistryKeys;
 import net.minecraft.world.TeleportTarget;
 import net.minecraft.world.World;
 
@@ -139,6 +138,7 @@ public class RingTeleport extends BaseRing
 		}
 		else
 		{
+			// can't we save the dim value to NBT as an Identifier directly?
 			RegistryKey<World> registryKey = world.getRegistryKey();
 			Identifier value = registryKey.getValue();
 			tags.put("pos", NbtHelper.fromBlockPos(pos));
@@ -157,8 +157,7 @@ public class RingTeleport extends BaseRing
 		ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
 
 		// Build world to test from stored data
-//		RegistryKey<World> storedKey = RegistryKey.of(Registry.WORLD_KEY, new Identifier(dim));
-		RegistryKey<World> storedKey = RegistryKey.of(RegistryKeys.DIMENSION, new Identifier(dim));
+		RegistryKey<World> storedKey = RegistryKey.of(RegistryKeys.WORLD, new Identifier(dim));
 		ServerWorld storedWorld = ((ServerWorld)world).getServer().getWorld(storedKey);
 
 		if(storedWorld == null || pos == null)
@@ -170,7 +169,7 @@ public class RingTeleport extends BaseRing
 			TeleportTarget target = new TeleportTarget(new Vec3d(pos.getX() + 0.5F, pos.getY(), pos.getZ() + 0.5F), new Vec3d(0, 0, 0), serverPlayer.getYaw(), serverPlayer.getPitch());
 			doTeleport(serverPlayer, storedWorld, target);
 
-			world.playSound((PlayerEntity)null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_CHORUS_FRUIT_TELEPORT, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+			world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_CHORUS_FRUIT_TELEPORT, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
 		}
 	}
 

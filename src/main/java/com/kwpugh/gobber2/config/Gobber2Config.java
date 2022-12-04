@@ -129,7 +129,7 @@ public class Gobber2Config extends PartitioningSerializer.GlobalData
 		public int staffFarmerIntervalExtra = 20;
 		public boolean staffFarmerExtraCrops = false;
 		public boolean staffFarmerReplant = true;
-		public boolean staffEnsnarementHotileMobs = false;
+		public boolean staffEnsnarementHostileMobs = false;
 
 		@Comment("\n"
 				+"\n"

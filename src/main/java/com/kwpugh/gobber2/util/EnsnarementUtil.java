@@ -22,10 +22,10 @@ import java.util.Optional;
 
 public class EnsnarementUtil
 {
-    static boolean enableHostileUse = Gobber2.CONFIG.GENERAL.staffEnsnarementHotileMobs;
+    static boolean enableHostileUse = Gobber2.CONFIG.GENERAL.staffEnsnarementHostileMobs;
 
     // Right-click on entity, if right type, save entity info to tag and delete entity
-    public static ActionResult captureMobs(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand)
+    public static ActionResult capturePassiveMobs(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand)
     {
         if(!player.world.isClient)
         {
@@ -63,7 +63,7 @@ public class EnsnarementUtil
     }
 
     // Right-click on entity, if right type, save entity info to tag and delete entity
-    public static ActionResult captureHostileMobs(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand)
+    public static ActionResult captureAllMobs(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand)
     {
         if(!player.world.isClient)
         {
@@ -79,6 +79,7 @@ public class EnsnarementUtil
                             entity instanceof GhastEntity ||
                             entity instanceof PhantomEntity ||
                             entity instanceof SlimeEntity ||    // and MagmaCube
+                            entity instanceof PathAwareEntity ||
                             ((entity instanceof HostileEntity) && !(entity instanceof WitherEntity))))
             {
                 if(EnsnarementUtil.saveEntityToStack(entity, stack))

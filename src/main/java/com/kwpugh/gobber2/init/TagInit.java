@@ -3,10 +3,9 @@ package com.kwpugh.gobber2.init;
 import com.kwpugh.gobber2.Gobber2;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.tag.TagKey;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registries;
-import net.minecraft.util.registry.Registry;
 
 public class TagInit 
 {

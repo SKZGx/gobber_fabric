@@ -5,8 +5,8 @@ import com.kwpugh.gobber2.effects.Blessing;
 import com.kwpugh.gobber2.effects.Experience;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registries;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 
 public class EffectsInit 
 {	
